@@ -19,7 +19,7 @@ class DiscoJdbcImplTest {
         List<Disco> list = discoJdbc.findAll();
         if(list == null || list.isEmpty())
         {
-            System.out.println("No hay elementos ");
+            System.out.println("No hay elementos");
             return;
         }
         list.stream().forEach( e-> System.out.println(e.toString()));

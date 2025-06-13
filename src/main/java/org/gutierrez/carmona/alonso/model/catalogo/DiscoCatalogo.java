@@ -80,7 +80,7 @@ public class DiscoCatalogo extends Catalogos<Disco>
             GeneroMusical genero= GeneroMusicalJdbcImpl.getInstance().findById(idGenero);
             if(genero!=null)
             {
-                disco.setGeneroMusical(genero);
+                disco.setGenero(genero);
                 flag3=false;
             }
             else{
@@ -143,7 +143,7 @@ public class DiscoCatalogo extends Catalogos<Disco>
             GeneroMusical genero= GeneroMusicalJdbcImpl.getInstance().findById(idGenero);
             if(genero!=null)
             {
-                disco.setGeneroMusical(genero);
+                disco.setGenero(genero);
                 flag3=false;
             }
             else{

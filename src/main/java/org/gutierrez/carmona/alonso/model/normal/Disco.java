@@ -15,7 +15,7 @@ public class Disco extends Catalogo
 
     private Disquera disquera;
     private Artista artista;
-    private GeneroMusical generoMusical;
+    private GeneroMusical genero;
 
     private Integer disquera_id;
     private Integer artista_id;
@@ -87,11 +87,11 @@ public class Disco extends Catalogo
     }
 
     public GeneroMusical getGeneroMusical() {
-        return generoMusical;
+        return genero;
     }
 
-    public void setGeneroMusical(GeneroMusical generoMusical) {
-        this.generoMusical = this.generoMusical;
+    public void setGenero(GeneroMusical genero) {
+        this.genero = genero;
     }
 
     public Integer getDisquera_id() {
@@ -129,6 +129,6 @@ public class Disco extends Catalogo
                 ", imagen='" + imagen + '\'' +
                 ", Id artista=" + artista +
                 ", Id disquera=" + disquera +
-                ", Id genero=" + generoMusical;
+                ", Id genero=" + genero;
     }
 }

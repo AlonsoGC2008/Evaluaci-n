@@ -56,7 +56,7 @@ public class DiscoJdbcImpl extends Conexion<Disco> implements DiscoJdbc
                 disco.setImagen(resultSet.getString(7));
                 disco.setArtista(ArtistaJdbcImpl.getInstance().findById(resultSet.getInt(8)));
                 disco.setDisquera(DisqueraJdbcImpl.getInstance().findById(resultSet.getInt(9)));
-                disco.setGeneroMusical(GeneroMusicalJdbcImpl.getInstance().findById(resultSet.getInt(10)));
+                disco.setGenero(GeneroMusicalJdbcImpl.getInstance().findById(resultSet.getInt(10)));
 
                 discos.add(disco);
             }
@@ -256,7 +256,7 @@ public class DiscoJdbcImpl extends Conexion<Disco> implements DiscoJdbc
                 disco.setImagen(resultSet.getString(7));
                 disco.setArtista(ArtistaJdbcImpl.getInstance().findById(resultSet.getInt(8)));
                 disco.setDisquera(DisqueraJdbcImpl.getInstance().findById(resultSet.getInt(9)));
-                disco.setGeneroMusical(GeneroMusicalJdbcImpl.getInstance().findById(resultSet.getInt(10)));
+                disco.setGenero(GeneroMusicalJdbcImpl.getInstance().findById(resultSet.getInt(10)));
                 discos.add(disco);
             }
             resultSet.close();
